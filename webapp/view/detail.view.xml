@@ -1,0 +1,31 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="edt.masterDetailDemo.controller.detail"
+	xmlns:html="http://www.w3.org/1999/xhtml">
+	<App>
+		<pages>
+			<Page title="Title">
+				<content>
+						<Table headerText="Animal Detail" 
+							   items="{table>/}" >
+							<columns>
+								<Column>
+									<Label text="Animal Name" />
+								</Column>
+								<Column>
+									<Label text="Animal Place" />
+								</Column>
+							</columns>
+							<items>
+								<ColumnListItem>
+									<cells>
+										<Text text="{table>Name}" />
+										<Text text="{table>Place}" />
+									</cells>
+								</ColumnListItem>
+							</items>
+						</Table>
+					
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

@@ -1,0 +1,14 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="edt.masterDetailDemo.controller.App"
+	xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc">
+	<Shell id="shell">
+		<SplitApp id="app"
+				  mode="ShowHideMode" >
+			<masterPages>
+				<mvc:XMLView viewName="edt.masterDetailDemo.view.master" ></mvc:XMLView>
+			</masterPages>
+			<detailPages>
+				<mvc:XMLView viewName="edt.masterDetailDemo.view.detail" ></mvc:XMLView>
+			</detailPages>
+		</SplitApp>
+	</Shell>
+</mvc:View>

@@ -1,0 +1,22 @@
+<mvc:View controllerName="edt.masterDetailDemo.controller.master" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
+	<Shell id="shell">
+		<App>
+			<pages>
+				<Page id="page" title="{i18n>title}">
+					<content>
+						<List headerText="Animals" 
+						      items="{animals>/names}" >
+							<items>
+								<StandardListItem
+									title="{animals>Name}"
+									description="{animals>Place}"
+									type="Active"
+									press="showDetails" /> 
+							</items>
+						</List>
+					</content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>
